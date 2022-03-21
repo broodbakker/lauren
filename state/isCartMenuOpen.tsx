@@ -2,13 +2,15 @@ import * as React from 'react'
 
 type Action = { type: 'open' } | { type: 'close' }
 type Dispatch = (action: Action) => void
-type State = { isCartMenuOpen: boolean }
 type isCartMenuOpenProviderProps = { children: React.ReactNode }
+type State = { isCartMenuOpen: boolean }
+
 
 const IsCartMenuOpenStateContext = React.createContext
   <{ state: State; dispatch: Dispatch } | undefined>(undefined)
 
 function isCartMenuOpenReducer(state: State, action: Action) {
+
   switch (action.type) {
     case 'open': {
       return { isCartMenuOpen: true }
