@@ -8,15 +8,15 @@ type seoHeader = {
 export const SeoHeader: FunctionComponent<seoHeader> = ({ subtitle, children }) => {
   const title = `${subtitle} | ScienceGeek.nl`;
   const desc =
-    "ScienceGeek.nl is een onafhankelijk medium met wetenschapsnieuws. Vol onderzoek over tech, robots, seks, space, natuur en psychologie nieuws | ScienceGeek.nl";
-  const ogImgRelativePath = "/sciencegeeklogo.png";
+    "";
+  const ogImgRelativePath = "/";
 
-  const siteURL = "https://sciencegeek.nl";
+  const siteURL = "";
   const ogImageURL = `${siteURL}${ogImgRelativePath}`;
   const pathName = useRouter().pathname;
   const pageURL = pathName === "/" ? siteURL : siteURL + pathName;
   const twitterHandle = "";
-  const siteName = "sciencegeek.nl";
+  const siteName = "";
   return (
     <NextSeo
       title={title}
@@ -33,7 +33,7 @@ export const SeoHeader: FunctionComponent<seoHeader> = ({ subtitle, children }) 
             url: ogImageURL,
             width: 1200,
             height: 630,
-            alt: "ScienceGeek.nl - ScienceGeek.nl is een onafhankelijk medium met wetenschapsnieuws.",
+            alt: "",
           },
         ],
         site_name: siteName,
@@ -52,7 +52,7 @@ export const SeoHeader: FunctionComponent<seoHeader> = ({ subtitle, children }) 
       additionalLinkTags={[
         {
           rel: "icon",
-          href: `${siteURL}/ico/sciencegeeklogo.ico`,
+          href: ``,
         },
         // {
         //   rel: "manifest",
