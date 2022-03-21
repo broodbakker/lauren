@@ -1,0 +1,88 @@
+
+backend:
+  name: git-gateway
+  branch: master
+
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: dta9vptzh
+    api_key: 651661895481873
+
+public_folder: /image
+publish_mode: editorial_workflow
+
+collections:
+  - name: auteurs
+    label: Auteurs
+    folder: "content/auteurs"
+    create: true
+    fields:
+      - {name: naam, label: Name}
+
+  - name: tags
+    label: Tags
+    folder: "content/tags"
+    create: true
+    fields:
+      - {name: naam, label: Name}
+
+  - name: photos
+    label: Photos
+    folder: "content/photos"
+    create: true
+    fields:
+      - {name: title, label: Title,required: true}
+      - {name: source, label: Source,required: false}
+      - {name: "image", label: "Image",  widget: "image",required: true}
+
+  - name: posts
+    label: Posts
+    folder: "content/posts"
+    create: true
+    fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Subtitle", name: "subtitle", widget: "string", required: false}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - name: headerPhoto
+        label: HeaderPhoto
+        widget: relation
+        collection: photo's
+        searchFields: [image, title]
+        required: true
+        display_fields: [image]
+        valueField: "{{slug}}"
+        options_length: 3
+
+      - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Subject"
+        name: "subject"
+        widget: "select"
+        options: ["history","human","nature","quirky","space","tech"]
+      - name: author
+        label: Author
+        widget: relation
+        collection: authors
+        searchFields: [Name]
+        valueField: Name
+      - name: tags
+        label: Tags
+        widget: relation
+        collection: tags
+        searchFields: [Name]
+        multiple: true
+        valueField: name
+        required: false
+      - name: photos
+        label: Photos
+        widget: relation
+        collection: photos
+        searchFields: [title]
+        display_fields: [title]
+        multiple: true
+        valueField: "{{slug}}"
+        required: false
+        options_length: 1
+
+
