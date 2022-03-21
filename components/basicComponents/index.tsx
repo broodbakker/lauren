@@ -1,5 +1,0 @@
-export { Heading } from "./heading"
-export { Image } from "./image"
-export { List } from "./list"
-export { Text, Paragraph } from "./text"
-export { Blob } from "../../animation/blob"

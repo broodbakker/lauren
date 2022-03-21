@@ -41,7 +41,7 @@ const Product = () => {
 
           {/* price */}
           <Box margin="small">
-            <Text name="$13.95" />
+            <Text>"$13.95"</Text>
           </Box>
 
         </Box>

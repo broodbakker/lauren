@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 //components
-import Winkel from "./winkelPage/winkel"
+import Winkel from "./winkel"
 import { Box, ResponsiveContext } from "grommet"
 //constants
 import { NAVBAR_HEIGHT, NAVBAR_HEIGHT_SMALL } from "../../../shared/data"

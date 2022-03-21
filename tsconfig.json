@@ -18,21 +18,20 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "./",
-    "paths": {
-      "@atom/*": [
-        "components/atom/*"
-      ],
-      "@buttons/*": [
-        "components/atom/buttons"
-      ]
-    }
+    // "baseUrl": "./",
+    // "paths": {
+    //   "@atom/*": [
+    //     "components/atom/*"
+    //   ],
+    //   "@buttons/*": [
+    //     "components/atom/buttons"
+    //   ]
+    // }
   },
   "include": [
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "components/basicComponents"
   ],
   "exclude": [
     "node_modules"
