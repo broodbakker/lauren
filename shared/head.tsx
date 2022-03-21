@@ -12,6 +12,7 @@ export const HeadComponennt: FunctionComponent<HeadProps> = ({ children }) => {
     <>
       <Head>
         <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
       </Head>
       <SeoHeader />
 
