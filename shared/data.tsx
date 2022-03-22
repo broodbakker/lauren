@@ -5,6 +5,7 @@ export const LOADING_IMAGE = '/image/loadingImage.svg'
 export const LOADING_ALT = 'this is a background image'
 export const NAVBAR_HEIGHT = 113;
 export const NAVBAR_HEIGHT_SMALL = 101;
+export const CONTENT_PATH = "./content/products";
 
 export const NAVLINKS = [{ name: "Thuis", href: "/" }, { name: "Winkelen", href: "/winkel" }, { name: "Over Mij", href: "/over_mij" }]
 

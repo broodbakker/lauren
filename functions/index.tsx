@@ -1,4 +1,5 @@
 import { Product, SnipCartButton } from "../typescript"
+import fs from 'fs'
 
 export const getProducts = (products: Product[]) => {
   return products
@@ -28,7 +29,24 @@ const selectCategory = (category: string, products: Product[]) => products.reduc
 }, []);
 
 
+export const makeStaticPathsParam = (slug: string) => ({
+  params: { product: slug },
+})
+
+export const getPostFileNames = (filePath:string) => {
+  const postFileNames = fs.readdirSync(filePath).map((file) => {
+    return file
+  })
+  return postFileNames
+}
+
+export const importPostSlugs = (filePath:string) => fs
+  .readdirSync(filePath)
+  // Remove file extensions for page paths
+  .map((path) => path.replace(/\.mdx?$/, ''))
+  // Map the path into the static paths object required by Next.js
+  .map((product) => ({ params: { product } }));
 
 
-
+export const getPost = () => 4
 

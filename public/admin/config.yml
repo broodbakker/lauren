@@ -20,6 +20,7 @@ collections:
     label: Products
     folder: "content/products"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
       - {label: "Name", name: "name", widget: "string"}
@@ -34,6 +35,7 @@ collections:
         label: Image
         widget: 'image'
         valueField: "{{slug}}"
+
 
 
 

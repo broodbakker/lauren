@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@types/node": "^17.0.21",
+    "fs": "0.0.1-security",
     "grommet": "^2.21.0",
     "grommet-icons": "^4.7.0",
     "next": "^12.1.0",
