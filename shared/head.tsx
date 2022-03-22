@@ -3,6 +3,7 @@ import Head from 'next/head';
 import { useRouter } from 'next/router'
 import { SeoHeader } from './SeoHeader';
 import Script from 'next/script'
+
 type HeadProps = {
 }
 
@@ -12,7 +13,7 @@ export const HeadComponennt: FunctionComponent<HeadProps> = ({ children }) => {
     <>
       <Head>
         <Script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></Script>
-        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+        {/* <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script> */}
       </Head>
       <SeoHeader />
 
