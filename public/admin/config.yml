@@ -22,9 +22,9 @@ collections:
     create: true
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
-      - {label: "Price", name: "price", widget: "string"}
       - {label: "Name", name: "name", widget: "string"}
-      - {label: "Description", name: "description", widget: "string", required: false}
+      - {label: "Price", name: "price", widget: "number",value_type: "int"}
+      - {label: "Body", name: "description", widget: "markdown"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - label: "Category"
         name: "category"
@@ -34,6 +34,7 @@ collections:
         label: Image
         widget: 'image'
         valueField: "{{slug}}"
+
 
 
 
