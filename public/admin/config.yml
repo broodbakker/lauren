@@ -8,7 +8,7 @@ media_library:
   config:
     cloud_name: dta9vptzh
     api_key: 651661895481873
-     multiple: true
+    multiple: true
 public_folder: /image
 publish_mode: editorial_workflow
 collections:
