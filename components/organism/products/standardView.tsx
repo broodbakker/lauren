@@ -25,7 +25,7 @@ const Home_Product = ({ productData }: HomeProps) => {
         {/* image */}
         <ContainerImg height="small">
           <Image
-            src={productData.image}
+            src={productData.image[0]}
             alt="Picture of the author"
           />
         </ContainerImg>

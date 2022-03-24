@@ -13,8 +13,8 @@ export const ProductToSnipcartData = (props: Product): SnipCartButton => ({
   "data-item-price": props.price,
   "data-item-url": props.url,
   "data-item-description": props.description,
-  "data-item-image": props.image,
-  "data-item-name": props.image
+  "data-item-image": props.image[0],
+  "data-item-name": props.name
 })
 
 export const calculateOptions = (products: Product[]): string[] => products.reduce((res, product) =>
