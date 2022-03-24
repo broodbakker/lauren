@@ -18,10 +18,11 @@ collections:
     fields:
       - {name: naam, label: Name}
   - name: products
+    identifier_field: name
     label: Products
     folder: "content/products"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{filename}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.name}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
       - {label: "Name", name: "name", widget: "string"}
