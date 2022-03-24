@@ -3,10 +3,12 @@ backend:
   name: git-gateway
   branch: master
 media_library:
+  config:
   name: cloudinary
   config:
     cloud_name: dta9vptzh
     api_key: 651661895481873
+     multiple: true
 public_folder: /image
 publish_mode: editorial_workflow
 collections:
@@ -20,7 +22,7 @@ collections:
     label: Products
     folder: "content/products"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{filename}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
       - {label: "Name", name: "name", widget: "string"}
@@ -35,9 +37,7 @@ collections:
         label: Image
         widget: 'image'
         valueField: "{{slug}}"
-        media_library:
-          config:
-            multiple: true
+
 
 
 
