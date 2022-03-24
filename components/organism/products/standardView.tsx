@@ -5,7 +5,7 @@ import { Product } from "../../../typescript"
 //atoms
 import { PaymentButton } from "../../atom/buttons"
 import Image from "../../atom/image"
-import Text from "../../atom/type/title/text"
+import Text from "../../atom/type/text"
 import Title from "../../atom/type/title"
 
 const ContainerImg = styled(Box)`

@@ -3,7 +3,7 @@ import { Box, Layer } from "grommet"
 //atom
 import Cross from "../../atom/cross"
 import Input from "../../atom/inputText/input"
-import Text from "../../atom/type/title/text"
+import Text from "../../atom/type/text"
 //grid
 import Products from '../../grids/searchMenu_products';
 

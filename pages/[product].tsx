@@ -1,22 +1,17 @@
-//components
-// import HomePage from "../components/template/homePage"
 //functions
-import {  importPostSlugs,getPost } from "../functions"
-import {CONTENT_PATH} from "../shared/data"
+import { importPostSlugs, getParsedFileContentBySlug } from "../functions/content"
+import { CONTENT_PATH, product1 } from "../shared/data"
+//template
+import ProductPage from "../components/template/productPage"
 
-// //typescript
-// import { Product } from "../typescript"
-// //state
-// import { UseProductProvider } from '../state/productProvider'
+type ProductProps = {
+  product: any
 
-type HomeProps = {
 }
 
-const Home = ({ }: HomeProps) => {
+const Product = ({ product }: ProductProps) => {
   return (
-    <div >
-      test
-    </div>
+    <ProductPage productData={product1} />
   )
 }
 
@@ -37,10 +32,9 @@ type params = {
   defaultLocale: any
 }
 
-
 export async function getStaticProps({ params }: params) {
-  const post = await getPost(params.product);
-  
+  const product = getParsedFileContentBySlug(params.product, CONTENT_PATH);
+
   return {
     props: {
       product: 4
@@ -48,4 +42,4 @@ export async function getStaticProps({ params }: params) {
   };
 }
 
-export default Home
+export default Product

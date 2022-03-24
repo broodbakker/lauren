@@ -6,7 +6,7 @@ import { Box } from "grommet"
 import Image from "../../atom/image"
 import { LinkButton } from "../../atom/buttons"
 import WaveIcon from "../../atom/icons/jiggleIcon"
-import Text1 from "../../atom/type/title/text"
+import Text1 from "../../atom/type/text"
 //data
 import { GLOBALSTYLE } from "../../../shared/styles"
 import { NAVLINK_OVER_MIJ } from "../../../shared/data"

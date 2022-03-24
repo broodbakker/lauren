@@ -2,7 +2,7 @@ import React from 'react'
 import styled from "styled-components"
 //atom
 import { CartIcon } from "../../../atom/navbar_cart"
-import Text from "../../../atom/type/title/text"
+import Text from "../../../atom/type/text"
 
 import { Box } from "grommet"
 

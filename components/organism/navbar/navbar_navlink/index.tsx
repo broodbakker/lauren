@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 //atom
-import Text from "../../../atom/type/title/text"
+import Text from "../../../atom/type/text"
 
 type NavLinkProp = {
   name: string

@@ -35,6 +35,9 @@ collections:
         label: Image
         widget: 'image'
         valueField: "{{slug}}"
+        media_library:
+          config:
+            multiple: true
 
 
 

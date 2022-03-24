@@ -6,7 +6,7 @@ import { Instagram, Youtube, Twitter, Facebook } from 'grommet-icons';
 import styled from "styled-components"
 
 import Title from "./atom/type/title"
-import Text from "./atom/type/title/text"
+import Text from "./atom/type/text"
 //organism
 import Form from "./organism/form"
 
@@ -66,24 +66,24 @@ const FooterComponent = () =>
               Help
             </HeadingText>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>     FaQ  </Text>
             </Box>
 
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>     shipping  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>      geld terug  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>      contact  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>           hoe ik het maak  </Text>
             </Box>
 
@@ -94,24 +94,24 @@ const FooterComponent = () =>
               Help
             </HeadingText>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>     FaQ  </Text>
             </Box>
 
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>     shipping  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>      geld terug  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>      contact  </Text>
             </Box>
 
-            <Box margin={{vertical:"xsmall"}}>
+            <Box margin={{ vertical: "xsmall" }}>
               <Text>           hoe ik het maak  </Text>
             </Box>
           </Box>

@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Box, Grid } from "grommet"
 //atom
 import Title from "../../../atom/type/title"
-import Text from "../../../atom/type/title/text"
+import Text from "../../../atom/type/text"
 import Image from "../../../atom/image"
 
 const ImageContainer = styled(Box)`

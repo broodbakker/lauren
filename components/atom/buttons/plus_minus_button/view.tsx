@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Box } from "grommet"
 
 import { Button } from "../index"
-import Text from "../../type/title/text"
+import Text from "../../type/text"
 
 const Box3 = styled(Box)`
  display:flex;

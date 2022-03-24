@@ -4,6 +4,7 @@ import styled, { keyframes, css } from "styled-components";
 import { v4 as uuidv4 } from 'uuid';
 //hooks
 import { useArrayInterval } from "../hooks/useArrayInterval"
+import {renderWhiteSpace} from "../functions/typography"
 
 type TextAnimationProps = {
   lines: string[],
@@ -13,7 +14,7 @@ export const TextAnimation: FunctionComponent<TextAnimationProps> = ({ lines }) 
   const text = useArrayInterval(lines)
   return (
     <Wrapper>
-      {text.split("").map((item) => <span key={uuidv4()}>{item}</span>)}
+      {text.split("").map((item) => <span key={uuidv4()}>{renderWhiteSpace(item)}</span>)}
     </Wrapper>
   )
 }
