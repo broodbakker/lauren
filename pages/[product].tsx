@@ -10,7 +10,6 @@ type ProductProps = {
 }
 
 const Product = ({ product }: ProductProps) => {
-  console.log(product, "product")
   return (
     <ProductPage productData={product} />
   )

@@ -32,15 +32,13 @@ export const getParsedFileContentBySlug = (
 
   const { data, content } = matter(fileContents);
 
-  const date = Math.floor(data.date / 1000).toString()
-
-
-
   return {
-    frontMatter: { ...data, date },
+    frontMatter: { ...data, date: changeDate(data.date) },
     content,
   };
 };
+
+const changeDate = (date: any) => Math.floor(date / 1000).toString()
 
 export async function markdownToHtml(markdown) {
   const result = await remark().use(html).process(markdown);

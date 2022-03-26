@@ -7,6 +7,7 @@ media_library:
   config:
     cloud_name: dta9vptzh
     api_key: 651661895481873
+    multiple: true
 public_folder: /image
 publish_mode: editorial_workflow
 collections:
@@ -17,12 +18,13 @@ collections:
     fields:
       - {name: naam, label: Name}
   - name: products
+    identifier_field: name
     label: Products
     folder: "content/products"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    sort: "date:desc"
+    slug: "{{year}}-{{month}}-{{day}}-{{fields.name}}"
     fields:
-      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "post.template"}
       - {label: "Name", name: "name", widget: "string"}
       - {label: "Price", name: "price", widget: "string", pattern: ['(?<=^| )\d+(\.\d+)?(?=$| )', "must be a number"]}
       - {label: "Body", name: "description", widget: "markdown"}
@@ -35,9 +37,14 @@ collections:
         label: Image
         widget: 'image'
         valueField: "{{slug}}"
-        media_library:
-          config:
-            multiple: true
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+
+
+
+
+
 
 
 
