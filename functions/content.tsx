@@ -2,10 +2,8 @@ import fs from 'fs'
 import { join } from 'path';
 import matter from 'gray-matter';
 
-import {remark} from 'remark';
+import { remark } from 'remark';
 import html from 'remark-html';
-
-
 
 export const importPostSlugs = (filePath: string) => fs
   .readdirSync(filePath)
@@ -13,7 +11,6 @@ export const importPostSlugs = (filePath: string) => fs
   .map((path) => path.replace(/\.mdx?$/, ''))
   // Map the path into the static paths object required by Next.js
   .map((product) => ({ params: { product } }));
-
 
 
 export interface FrontMatter {
@@ -25,7 +22,6 @@ export interface MarkdownDocument {
   content: string;
 }
 
-
 export const getParsedFileContentBySlug = (
   slug: string,
   postsPath: string
@@ -36,8 +32,12 @@ export const getParsedFileContentBySlug = (
 
   const { data, content } = matter(fileContents);
 
+  const date = Math.floor(data.date / 1000).toString()
+
+
+
   return {
-    frontMatter: data,
+    frontMatter: { ...data, date },
     content,
   };
 };

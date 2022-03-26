@@ -10,8 +10,9 @@ type ProductProps = {
 }
 
 const Product = ({ product }: ProductProps) => {
+  console.log(product, "product")
   return (
-    <ProductPage productData={product1} />
+    <ProductPage productData={product} />
   )
 }
 
@@ -38,7 +39,7 @@ export async function getStaticProps({ params }: params) {
 
   return {
     props: {
-      product: 4
+      product: product.frontMatter
     },
   };
 }
