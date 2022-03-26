@@ -6,7 +6,7 @@ type seoHeader = {
   subtitle?: string
 }
 export const SeoHeader: FunctionComponent<seoHeader> = ({ subtitle, children }) => {
-  const title = `${subtitle} | ScienceGeek.nl`;
+  const title = `${subtitle} `;
   const desc =
     "";
   const ogImgRelativePath = "/";

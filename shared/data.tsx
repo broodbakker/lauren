@@ -11,6 +11,7 @@ export const NAVLINKS = [{ name: "Thuis", href: "/" }, { name: "Winkelen", href:
 
 export const NAVLINK_HOME = { name: "Thuis", href: "/" }
 export const NAVLINK_OVER_MIJ = { name: "Winkelen", href: "/winkel" }
+
 const photo = {
   onderschrift: "onderschrift1",
   bron: "dit is een bron",
@@ -18,12 +19,10 @@ const photo = {
 }
 
 export const product1 = {
-  id: "starry-night",
   price: "79.99",
   category: "horses",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
-  image: ["/image/bedrijventerrein.jpeg","/image/lauren1.jpeg","/image/lauren2.jpeg"],
+  image: ["/image/bedrijventerrein.jpeg", "/image/lauren1.jpeg", "/image/lauren2.jpeg"],
   name: "The Starry Night",
   date: "date",
   tags: ["orange scent", "smooths", "exfoliates"],
@@ -31,10 +30,8 @@ export const product1 = {
 }
 
 export const product2 = {
-  id: "starry-night2",
   price: "79.99",
   category: "wood",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
   image: ["/image/bedrijventerrein.jpeg"],
   name: "The Starry Night",
@@ -44,10 +41,8 @@ export const product2 = {
 }
 
 export const product3 = {
-  id: "starry-night3",
   price: "79.99",
   category: "stable",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
   image: ["/image/bedrijventerrein.jpeg"],
   name: "The Starry Night",
@@ -57,10 +52,8 @@ export const product3 = {
 }
 
 export const product4 = {
-  id: "starry-night4",
   price: "79.99",
   category: "horses",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
   image: ["/image/bedrijventerrein.jpeg"],
   name: "The Starry Night",
@@ -70,10 +63,8 @@ export const product4 = {
 }
 
 export const product5 = {
-  id: "starry-night5",
   price: "79.99",
   category: "wood",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
   image: ["/image/bedrijventerrein.jpeg"],
   name: "The Starry Night",
@@ -83,10 +74,8 @@ export const product5 = {
 }
 
 export const product6 = {
-  id: "starry-night6",
   price: "79.99",
   category: "wood",
-  url: "/paintings/starry-night",
   description: "High-quality replica of The Starry Night by the Dutch post-impressionist painter Vincent van Gogh.",
   image: ["/image/bedrijventerrein.jpeg"],
   name: "The Starry Night",

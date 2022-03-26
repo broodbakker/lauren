@@ -32,6 +32,7 @@ type params = {
   defaultLocale: any
 }
 
+
 export async function getStaticProps({ params }: params) {
   const product = getParsedFileContentBySlug(params.product, CONTENT_PATH);
 

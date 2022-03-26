@@ -1,5 +1,4 @@
 ---
-templateKey: post.template
 name: sdfasd
 price: "12.2"
 description: tes
