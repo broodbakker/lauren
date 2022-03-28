@@ -34,8 +34,6 @@ type PaymentButtonProps = {
 const PaymentButton = ({ icon, productData, ...props }: PaymentButtonProps) => {
   const snipCartData = ProductToSnipcartData(productData)
 
-  console.log(snipCartData)
-
   if (icon === "arrow") return <ArrowButton {...props} {...snipCartData} />
 
   return <NormalButton {...props} {...snipCartData} />

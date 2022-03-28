@@ -43,7 +43,7 @@ function SearchInput({ value, handleChange, placeholder, bgColor, name }: InputP
   );
 }
 
-function StandardInput({ value, handleChange, placeholder, bgColor }: InputProps) {
+function StandardInput({ value, handleChange, placeholder, bgColor, name }: InputProps) {
   return (
     <Container
       placeholder={placeholder}

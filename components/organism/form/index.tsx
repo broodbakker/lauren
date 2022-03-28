@@ -11,7 +11,7 @@ const Form = () =>
   <form name="contact" action="/success" method="POST" data-netlify="true">
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">E-mail</Text>
-      <Input placeholder="jouw e-mail ✉️" type="email" name="email"  />
+      <Input placeholder="jouw e-mail ✉️" type="email" name="email" />
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>

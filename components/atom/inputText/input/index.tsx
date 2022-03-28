@@ -5,10 +5,10 @@ type InputProps = {
   placeholder: string
   type?: string
   bgColor?: "light" | "dark"
-  name: string
+  name:string
 }
 
-const Input = ({ placeholder, type, bgColor, name }: InputProps) => {
+const Input = ({ placeholder, type, bgColor,name }: InputProps) => {
   const { handleChange, value } = logic()
 
   if (type === "search") return <SearchInput name={name} bgColor={bgColor} value={value} handleChange={handleChange} placeholder={placeholder} />

@@ -1,29 +1,28 @@
 //components
-import Over_mijPage from "../components/template/over_mijPage"
+import WinkelPage from "../components/template/winkelPage"
 //functions
-import { getProducts } from "../functions"
-//fake data
-import { products as fakeProducts } from "../shared/data"
+import { getProducts } from "../functions/product"
 //typescript
 import { Product } from "../typescript"
 //state
 import { UseProductProvider } from '../state/productProvider'
+import { PRODUCTS_PATH } from "../shared/data"
 
-type Over_mijProps = {
+type WinkelProps = {
   products: Product[]
 }
 
-const Over_mij = ({ products }: Over_mijProps) => {
+const Winkel = ({ products }: WinkelProps) => {
   return (
     <UseProductProvider products={products}>
-      <Over_mijPage />
+      <WinkelPage />
     </UseProductProvider>
   )
 }
 
 export async function getStaticProps() {
-  const products = await getProducts(fakeProducts)
+  const products = await getProducts(PRODUCTS_PATH)
   return { props: { products } }
 }
 
-export default Over_mij
+export default Winkel

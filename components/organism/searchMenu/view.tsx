@@ -32,7 +32,7 @@ const View: FunctionComponent<SearchProps> = ({ isSearchMenuOpen, closeMenu }) =
             </Box>
             {/* Search */}
             <Box margin="medium" flex={false}>
-              <Input placeholder="type here" type="search" bgColor='light' />
+              <Input placeholder="type here" type="search" bgColor='light' name="search" />
             </Box>
             {/* text */}
             <Box alignSelf="center" flex={false} width="medium">

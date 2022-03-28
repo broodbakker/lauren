@@ -31,10 +31,8 @@ type params = {
 
 export async function getStaticProps({ params }: params) {
 
-  console.log("test")
   const { frontMatter } = getProductBySlug(params.product, PRODUCTS_PATH);
 
-  console.log("test1")
   return {
     props: {
       product: frontMatter

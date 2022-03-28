@@ -27,7 +27,7 @@ type InputProps = {
   name: string
 }
 
-function View({ value, handleChange, placeholder }: InputProps) {
+function View({ value, handleChange, placeholder,name }: InputProps) {
   return (
     <Container
       placeholder={placeholder}
