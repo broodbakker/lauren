@@ -9,6 +9,7 @@ import TextArea10 from "../../atom/inputText/textarea"
 
 const Form = () =>
   <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">E-mail</Text>
       <Input placeholder="jouw e-mail ✉️" type="email" name="email" />
