@@ -32,6 +32,7 @@ type ButtonProps = {
   icon?: string
   snipCartData?: SnipCartButton
   href?: string
+  type?: string
 }
 
 const ArrowButton = ({ name, fill, thin, handleClick, ...props }: ButtonProps) => <UserButton label={name} alignSelf={fill ? "stretch" : "center"} icon={<FormNextLink />} thin={thin} onClick={handleClick} {...props} />

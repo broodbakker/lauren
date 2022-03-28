@@ -8,7 +8,7 @@ import Input from "../../atom/inputText/input"
 import TextArea10 from "../../atom/inputText/textarea"
 
 const Form = () =>
-  <form name="contact" action="/success" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true">
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">E-mail</Text>
       <Input placeholder="jouw e-mail ✉️" type="email" name="email" />
