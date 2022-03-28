@@ -7,6 +7,7 @@ import { PaymentButton } from "../../atom/buttons"
 import Image from "../../atom/image"
 import Text from "../../atom/type/text"
 import Title from "../../atom/type/title"
+import Link from "../../atom/link"
 
 const ContainerImg = styled(Box)`
   position:relative;`
@@ -21,6 +22,9 @@ type HomeProps = {
 const Home_Product = ({ productData }: HomeProps) => {
   return (
     <CursorBox pad="small">
+
+      <Link href={productData.slug}>
+        <a>
       <Box>
         {/* image */}
         <ContainerImg height="small">
@@ -40,6 +44,8 @@ const Home_Product = ({ productData }: HomeProps) => {
 
         <PaymentButton name="add to cart | $30" fill thin productData={productData} />
       </Box>
+      </a>
+          </Link>
 
     </CursorBox>
   )

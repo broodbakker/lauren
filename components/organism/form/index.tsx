@@ -8,25 +8,25 @@ import Input from "../../atom/inputText/input"
 import TextArea10 from "../../atom/inputText/textarea"
 
 const Form = () =>
-  <Box>
+  <form name="contact" action="/success" method="POST" data-netlify="true">
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">E-mail</Text>
-      <Input placeholder="jouw e-mail ✉️" />
+      <Input placeholder="jouw e-mail ✉️" type="email" name="email"  />
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">Naam</Text>
-      <Input placeholder="voornaam 📛" />
+      <Input placeholder="voornaam 📛" type="text" name="name" />
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Text size="medium">Vraag</Text>
-      <TextArea10 placeholder="waarmee kan ik je helpen? 🙋" />
+      <TextArea10 placeholder="waarmee kan ik je helpen? 🙋" name="message" />
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
-      <Button name="VERSTUUR" fill thin />
+      <Button name="VERSTUUR" fill thin type="submit" />
     </Box>
-  </Box>
+  </form>
 
 export default Form

@@ -3,12 +3,13 @@ import logic from "./logic"
 
 type InputProps = {
   placeholder: string
+  name:string
 }
 
-const Input = ({ placeholder }: InputProps) => {
+const Input = ({ placeholder,name}: InputProps) => {
   const { handleChange, value } = logic()
 
-  return <View value={value} handleChange={handleChange} placeholder={placeholder} />
+  return <View value={value} name={name} handleChange={handleChange} placeholder={placeholder} />
 }
 
 export default Input

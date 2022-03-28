@@ -1,13 +1,13 @@
 //components
 import HomePage from "../components/template/homePage"
 //functions
-import { getProducts } from "../functions"
-//fake data
-import { products as fakeProducts } from "../shared/data"
+import { getProducts } from "../functions/product"
 //typescript
 import { Product } from "../typescript"
 //state
 import { UseProductProvider } from '../state/productProvider'
+//data
+import { PRODUCTS_PATH } from "../shared/data"
 
 type HomeProps = {
   products: Product[]
@@ -22,7 +22,7 @@ const Home = ({ products }: HomeProps) => {
 }
 
 export async function getStaticProps() {
-  const products = await getProducts(fakeProducts)
+  const products = await getProducts(PRODUCTS_PATH)
   return { props: { products } }
 }
 

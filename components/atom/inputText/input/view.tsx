@@ -26,10 +26,11 @@ type InputProps = {
   value: string,
   handleChange: (event: any) => void
   placeholder: string
-  bgColor:string
+  bgColor: string
+  name: string
 }
 
-function SearchInput({ value, handleChange, placeholder, bgColor }: InputProps) {
+function SearchInput({ value, handleChange, placeholder, bgColor, name }: InputProps) {
   return (
     <Container
       placeholder={placeholder}
@@ -37,6 +38,7 @@ function SearchInput({ value, handleChange, placeholder, bgColor }: InputProps) 
       onChange={handleChange}
       icon={<Search />}
       bgColor={bgColor}
+      name={name}
     />
   );
 }
@@ -48,6 +50,7 @@ function StandardInput({ value, handleChange, placeholder, bgColor }: InputProps
       value={value}
       onChange={handleChange}
       bgColor={bgColor}
+      name={name}
     />
   );
 }

@@ -1,14 +1,15 @@
 //functions
-import { importPostSlugs, getParsedFileContentBySlug } from "../functions/content"
-import { CONTENT_PATH, product1 } from "../shared/data"
+import { getProductBySlug, importStaticSlugs } from "../functions/product"
+import { PRODUCTS_PATH, product1 } from "../shared/data"
 //template
 import ProductPage from "../components/template/productPage"
+//typescript
+import { Product } from "../typescript"
 
 type ProductProps = {
-  product: any
+  product: Product
 
 }
-
 const Product = ({ product }: ProductProps) => {
   return (
     <ProductPage productData={product} />
@@ -16,29 +17,27 @@ const Product = ({ product }: ProductProps) => {
 }
 
 export async function getStaticPaths() {
-  const paths = importPostSlugs(CONTENT_PATH)
+  const paths = importStaticSlugs(PRODUCTS_PATH)
   return {
     paths,
     fallback: false
   };
 }
 
-
 // params will contain the id for each generated page.
 type params = {
   params: { product: string }
-  locales: any
-  locale: any
-  defaultLocale: any
 }
 
-
 export async function getStaticProps({ params }: params) {
-  const product = getParsedFileContentBySlug(params.product, CONTENT_PATH);
 
+  console.log("test")
+  const { frontMatter } = getProductBySlug(params.product, PRODUCTS_PATH);
+
+  console.log("test1")
   return {
     props: {
-      product: product.frontMatter
+      product: frontMatter
     },
   };
 }

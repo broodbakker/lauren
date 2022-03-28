@@ -15,13 +15,13 @@ import { GLOBALSTYLE } from "../../../shared/styles"
 //typescript
 import { Product } from '../../../typescript';
 
-const Container = styled(Box) <ContainerProps>`
-  margin-top:${(props) => (`${props.navbarHeight}px`)};
-`
-
 interface ContainerProps {
   navbarHeight: string;
 }
+
+const Container = styled(Box) <ContainerProps>`
+  margin-top:${(props) => (`${props.navbarHeight}px`)};
+`
 
 const ContainerImg = styled(Box)`
   aspect-ratio: 3/2;
@@ -54,7 +54,7 @@ const ProductPage = ({ productData }: ProductPageProps) => {
   const height = size === "small" ? NAVBAR_HEIGHT_SMALL : NAVBAR_HEIGHT
 
   return (
-    <Container navbarHeight={height} >
+    <Container navbarHeight={height}>
       <Box justify="center" align="center">
         <ResponsiveGrid
           responsive={true}
@@ -76,11 +76,10 @@ const ProductPage = ({ productData }: ProductPageProps) => {
               <Text size="medium" >{`€${productData.price} EUR`}</Text>
             </Box>
             {/* description */}
-
             <Box margin={{ vertical: "small" }}>
               <Text >{productData.description}</Text>
-              {/* add cart */}
             </Box>
+            {/* add cart */}
             <Box margin={{ vertical: "small" }}>
               <PaymentButton name="add to cart" productData={productData} />
             </Box>

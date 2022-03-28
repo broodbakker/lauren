@@ -24,6 +24,7 @@ type InputProps = {
   value: string,
   handleChange: (event: any) => void
   placeholder: string
+  name: string
 }
 
 function View({ value, handleChange, placeholder }: InputProps) {
@@ -33,10 +34,10 @@ function View({ value, handleChange, placeholder }: InputProps) {
       value={value}
       onChange={handleChange}
       icon={<Search />}
+      name={name}
     />
   );
 }
-
 
 
 export default View

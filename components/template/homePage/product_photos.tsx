@@ -22,9 +22,7 @@ const Product_photos = () =>
     </Box>
 
     <Box margin="large" alignContent='center' justify="center">
-      <Title name=" Four mini scrubs to
-        split and gift to
-        your four best babes." size="medium" />
+      <Title name="Zie nu hoe ik mijn producten en spulletjes maak!!" size="medium" />
 
       <Box pad="small">
         <Button name="lees meer" />
