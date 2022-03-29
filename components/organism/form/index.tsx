@@ -1,6 +1,7 @@
 import React from 'react'
 //components
-import { Box, } from "grommet"
+
+import { Box, Form as FormGrommet, FormField } from 'grommet';
 
 import Text from "../../atom/type/text"
 import { Button } from "../../atom/buttons"
@@ -8,26 +9,30 @@ import Input from "../../atom/inputText/input"
 import TextArea10 from "../../atom/inputText/textarea"
 
 const Form = () =>
-  <form name="contact" method="POST" data-netlify="true">
+  <FormGrommet name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <Box margin={{ horizontal: "", vertical: "small" }}>
-      <Text size="medium">E-mail</Text>
-      <Input placeholder="jouw e-mail ✉️" type="email" name="email" />
+
+      <FormField label="Email" name="email" required>
+        <Input placeholder="jouw e-mail ✉️" name="email" />
+      </FormField>
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
-      <Text size="medium">Naam</Text>
-      <Input placeholder="voornaam 📛" type="text" name="name" />
+      <FormField label="Name" name="name" required>
+        <Input placeholder="voornaam 📛" name="name" />
+      </FormField>
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
-      <Text size="medium">Vraag</Text>
-      <TextArea10 placeholder="waarmee kan ik je helpen? 🙋" name="message" />
+      <FormField name="message" label="Message" required>
+        <TextArea10 placeholder="waarmee kan ik je helpen? 🙋" name="message" />
+      </FormField>
     </Box>
 
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Button name="VERSTUUR" fill thin type="submit" />
     </Box>
-  </form>
+  </FormGrommet>
 
 export default Form

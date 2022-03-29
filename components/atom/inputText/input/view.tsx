@@ -4,8 +4,6 @@ import { TextInput } from "grommet"
 import { Search } from 'grommet-icons';
 import { normalizeColor } from "grommet/utils";
 
-
-
 const Container = styled(TextInput)`
   border-radius:0;
   ${props => css`
@@ -28,6 +26,7 @@ type InputProps = {
   placeholder: string
   bgColor: string
   name: string
+
 }
 
 function SearchInput({ value, handleChange, placeholder, bgColor, name }: InputProps) {
@@ -51,6 +50,8 @@ function StandardInput({ value, handleChange, placeholder, bgColor, name }: Inpu
       onChange={handleChange}
       bgColor={bgColor}
       name={name}
+
+      test="test"
     />
   );
 }
