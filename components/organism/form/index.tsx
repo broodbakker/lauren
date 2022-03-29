@@ -9,7 +9,7 @@ import Input from "../../atom/inputText/input"
 import TextArea10 from "../../atom/inputText/textarea"
 
 const Form = () =>
-  <FormGrommet name="contact" method="POST" data-netlify="true">
+  <form name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact" />
     <Box margin={{ horizontal: "", vertical: "small" }}>
 
@@ -33,6 +33,6 @@ const Form = () =>
     <Box margin={{ horizontal: "", vertical: "small" }}>
       <Button name="VERSTUUR" fill thin type="submit" />
     </Box>
-  </FormGrommet>
+  </form>
 
 export default Form
