@@ -26,7 +26,7 @@ type InputProps = {
   placeholder: string
   bgColor: string
   name: string
-
+  type?: string
 }
 
 function SearchInput({ value, handleChange, placeholder, bgColor, name }: InputProps) {
@@ -42,7 +42,7 @@ function SearchInput({ value, handleChange, placeholder, bgColor, name }: InputP
   );
 }
 
-function StandardInput({ value, handleChange, placeholder, bgColor, name }: InputProps) {
+function StandardInput({ value, handleChange, placeholder, bgColor, name, type }: InputProps) {
   return (
     <Container
       placeholder={placeholder}
@@ -50,7 +50,7 @@ function StandardInput({ value, handleChange, placeholder, bgColor, name }: Inpu
       onChange={handleChange}
       bgColor={bgColor}
       name={name}
-
+      type={type}
       test="test"
     />
   );
