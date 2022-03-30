@@ -1,9 +1,7 @@
 import React from 'react'
 //components
+import { Box  FormField} from 'grommet';
 
-import { Box, Form as FormGrommet, FormField,TextInput } from 'grommet';
-
-import Text from "../../atom/type/text"
 import { Button } from "../../atom/buttons"
 import Input from "../../atom/inputText/input"
 import TextArea10 from "../../atom/inputText/textarea"

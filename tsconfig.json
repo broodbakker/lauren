@@ -32,6 +32,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "plugins/netlify-plugin-store-products-for-search/index.js",
   ],
   "exclude": [
     "node_modules"
