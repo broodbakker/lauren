@@ -1,6 +1,6 @@
 import React from 'react'
 //components
-import { Box  FormField} from 'grommet';
+import { Box, FormField } from 'grommet';
 
 import { Button } from "../../atom/buttons"
 import Input from "../../atom/inputText/input"
@@ -21,7 +21,7 @@ const Form = () =>
     <Box margin={{ horizontal: "", vertical: "small" }}>
 
       <FormField label="Name" name="name" required>
-        <Input placeholder="voornaam 📛" name="name" type="name"/>
+        <Input placeholder="voornaam 📛" name="name" type="name" />
       </FormField>
     </Box>
 
