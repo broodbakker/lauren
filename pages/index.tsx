@@ -1,7 +1,7 @@
 //components
 import HomePage from "../components/template/homePage"
 //functions
-import { getProducts } from "../functions/product"
+import { getProducts } from "../localFunctions/product"
 //typescript
 import { Product } from "../typescript"
 //state

@@ -1,7 +1,7 @@
 import { useProduct } from '../../../state/productProvider'
 import { useShopCategorySelected } from '../../../state/shopCategorySelected'
 //functions
-import { selectProducts } from "../../../functions"
+import { selectProducts } from "../../../localFunctions"
 
 export const Logic = () => {
   const products = useProduct()

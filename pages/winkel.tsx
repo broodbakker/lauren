@@ -1,7 +1,7 @@
 //components
 import WinkelPage from "../components/template/winkelPage"
 //functions
-import { getProducts } from "../functions/product"
+import { getProducts } from "../localFunctions/product"
 //typescript
 import { Product } from "../typescript"
 //state

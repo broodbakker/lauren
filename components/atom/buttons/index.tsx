@@ -4,7 +4,7 @@ import React from 'react'
 import { NormalButton, ArrowButton } from "./view"
 import { Product } from "../../../typescript"
 //function
-import { ProductToSnipcartData } from "../../../functions/product"
+import { ProductToSnipcartData } from "../../../localFunctions/product"
 //atom
 import Link from "../link"
 

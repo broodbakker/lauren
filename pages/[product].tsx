@@ -1,5 +1,5 @@
 //functions
-import { getProductBySlug, importStaticSlugs } from "../functions/product"
+import { getProductBySlug, importStaticSlugs } from "../localFunctions/product"
 import { PRODUCTS_PATH, product1 } from "../shared/data"
 //template
 import ProductPage from "../components/template/productPage"

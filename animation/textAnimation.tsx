@@ -4,7 +4,7 @@ import styled, { keyframes, css } from "styled-components";
 import { v4 as uuidv4 } from 'uuid';
 //hooks
 import { useArrayInterval } from "../hooks/useArrayInterval"
-import {renderWhiteSpace} from "../functions/typography"
+import { renderWhiteSpace } from "../localFunctions/typography"
 
 type TextAnimationProps = {
   lines: string[],

@@ -3,7 +3,7 @@ import React from 'react';
 import { useProduct } from '../../../../state/productProvider'
 import { useShopCategorySelected } from '../../../../state/shopCategorySelected'
 
-import { calculateOptions } from "../../../../functions"
+import { calculateOptions } from "../../../../localFunctions"
 
 const logic = () => {
   const { dispatch } = useShopCategorySelected()
