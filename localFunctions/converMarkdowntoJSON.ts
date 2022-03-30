@@ -9,6 +9,4 @@ const writeProductsToJson = () => {
   const products = getProducts(PRODUCTS_PATH)
 
   fs.writeFileSync('./functions/data.json', JSON.stringify(products));
-
-
 }
