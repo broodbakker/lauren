@@ -3,8 +3,7 @@ import { getProducts } from "./product"
 //data
 import { PRODUCTS_PATH } from "../shared/data"
 
-
-const writeProductsToJson = () => {
+export const writeProductsToJson = () => {
 
   const products = getProducts(PRODUCTS_PATH)
 
