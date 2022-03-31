@@ -63,6 +63,8 @@ const getProductBySlug = (
 
 const putSlugInProductData = (slug, product) => ({ ...product, slug })
 
+const changeDate = (date) => Math.floor(date / 1000).toString()
+
 module.exports = search
 
 
