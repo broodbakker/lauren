@@ -1,36 +1,36 @@
 const lunr = require('lunr');
-const posts = require('./data.json');
-const index = require('./index.json')
+// const posts = require('./data.json');
+// const index = require('./index.json')
 
 const numberOfResults = 5
 
 const handler = async (event: any) => {
-  try {
-    const inputUser: string = event.queryStringParameters.search;
+  // try {
+  // const inputUser: string = event.queryStringParameters.search;
 
-    if (!inputUser) throw ('Missing term query parameter');
+  // if (!inputUser) throw ('Missing term query parameter');
 
-    const postsIndexedForSearch = lunr.Index.load(index);
+  // const postsIndexedForSearch = lunr.Index.load(index);
 
-    //const formattedSearch = formatSearch(postsIndexedForSearch, inputUser, numberOfResults)
+  // //const formattedSearch = formatSearch(postsIndexedForSearch, inputUser, numberOfResults)
 
-    const results = postsIndexedForSearch.search(inputUser)
+  // const results = postsIndexedForSearch.search(inputUser)
 
-    results.forEach((r: any) => {
-      r.name = posts[r.ref].name;
-      r.description = posts[r.ref].description;
-      r.slug = posts[r.ref].slug;
-      r.category = posts[r.ref].category;
-    });
+  // results.forEach((r: any) => {
+  //   r.name = posts[r.ref].name;
+  //   r.description = posts[r.ref].description;
+  //   r.slug = posts[r.ref].slug;
+  //   r.category = posts[r.ref].category;
+  // });
 
-    return {
-      statusCode: 200,
-      body: JSON.stringify(results),
+  //   return {
+  //     statusCode: 200,
+  //     body: JSON.stringify(results),
 
-    }
-  } catch (error: any) {
-    return { statusCode: 500, body: error.toString() }
-  }
+  //   }
+  // } catch (error: any) {
+  //   return { statusCode: 500, body: error.toString() }
+  // }
 }
 export { handler };
 
