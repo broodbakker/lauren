@@ -9,8 +9,8 @@ const search = (path) => {
 
   const index = createIndex(products)
 
-  fs.writeFileSync('./shared/data/productData.json', JSON.stringify(products));
-  fs.writeFileSync('./shared/data/searchIndex.json', JSON.stringify(index));
+  fs.writeFileSync('./shared/productData.json', JSON.stringify(products));
+  fs.writeFileSync('./shared/searchIndex.json', JSON.stringify(index));
 }
 
 const createIndex = (posts) => lunr(
