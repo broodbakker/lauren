@@ -61,7 +61,7 @@ const getProductBySlug = (
   };
 };
 
-const putSlugInProductData = (slug: string, product: any) => ({ ...product, slug })
+const putSlugInProductData = (slug, product) => ({ ...product, slug })
 
 module.exports = search
 
