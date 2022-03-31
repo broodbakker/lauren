@@ -1,22 +1,22 @@
 {
-  "name": "netlify-plugin-search",
-  "version": "1.3.0",
-  "description": "An example project to plugin to all the Netlify build events 🔌!",
+  "name": "netliy-plugin-store-posts-for-search",
+  "version": "1.0.0",
+  "description": "put markdown files in 1 json file",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {},
   "keywords": [
     "netlify",
     "netlify-plugin",
     "build",
     "plugins"
   ],
-  "author": "Tara Z. Manicsic <tzmanics@gmail.com> (https://tzmanics.dev)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/tzmanics/netlify-plugin-to-all-events/issues"
+  "author": "Martijn van de Ree",
+  "license": "ISC",
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "lunr": "^2.3.9"
   },
-  "homepage": "https://github.com/tzmanics/netlify-plugin-to-all-events#readme"
+  "devDependencies": {}
 }
