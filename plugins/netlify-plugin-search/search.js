@@ -1,4 +1,6 @@
 const fs = require('fs')
+const { join } = require("path")
+const matter = require('gray-matter')
 
 const lunr = require("lunr")
 
