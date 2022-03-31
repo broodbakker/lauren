@@ -9,7 +9,7 @@ const search = (path) => {
 
   const index = createIndex(products)
 
-  fs.writeFileSync('./shared/data//productData.json', JSON.stringify(products));
+  fs.writeFileSync('./shared/data/productData.json', JSON.stringify(products));
   fs.writeFileSync('./shared/data/searchIndex.json', JSON.stringify(index));
 }
 
