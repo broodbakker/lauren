@@ -12,6 +12,7 @@
     "gray-matter": "^4.0.3",
     "grommet": "^2.21.0",
     "grommet-icons": "^4.7.0",
+    "lunr": "^2.3.9",
     "next": "^12.1.0",
     "next-seo": "^5.1.0",
     "polished": "^4.1.4",
